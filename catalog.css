@@ -279,3 +279,88 @@ body {
     background-color: #007bff;
     color: white;
 }
+
+/* Общие стили для мобильных устройств */
+@media (max-width: 1024px) {
+    /* Убираем горизонтальный скролл и адаптируем контейнер */
+    .container {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .catalog-categories {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        width: 100%; /* Категории занимают всю ширину */
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category {
+        width: 48%; /* Две колонки */
+        margin: 5px;
+        font-size: 0.9em;
+    }
+
+    /* Продукты */
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%; /* Почти на всю ширину экрана */
+        margin: 10px 0;
+    }
+
+    .product-title {
+        font-size: 1.3em;
+    }
+
+    .product-link {
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: 100%; /* Категория занимает всю ширину */
+        font-size: 1em; /* Увеличиваем шрифт на маленьких экранах */
+        padding: 12px; /* Меньше отступов */
+    }
+
+    .product-card {
+        width: 100%; /* Карточка товара на всю ширину экрана */
+        margin: 10px 0;
+        padding: 12px; /* Меньше отступов */
+    }
+
+    .product-title {
+        font-size: 1.5em;
+    }
+
+    .product-link {
+        font-size: 1.2em;
+        padding: 14px 24px;
+    }
+
+    .filter-buttons {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .filter-button {
+        width: 90%; /* Кнопки фильтров занимают всю ширину */
+    }
+}

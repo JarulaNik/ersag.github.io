@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+    if (window.innerWidth <= 768) { // Измените 768 на нужную вам ширину
+        window.location.href = 'catalog.html';
+    }
 });
 
 

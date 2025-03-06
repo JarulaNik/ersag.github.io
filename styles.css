@@ -356,30 +356,7 @@ body {
     background: #007bff;
 }
 
-@media (max-width: 800px) {
-    .header-content, .footer-content, .main-container, .about-company-row, .gifts-row {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .main-container, .about-company, .gifts {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .left-section, .right-section {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .left-content, .carousel {
-        height: auto;
-    }
-
-    .about-company-row img, .about-company-row .about-text, .gifts-row img {
-        width: 90%;
-    }
-}
 
 .catalog-categories {
     margin-top: -40px;
@@ -434,3 +411,206 @@ body {
 .header-contact button:active {
     background-color: #0056b3;
 }
+
+@media (max-width: 800px) {
+    .header-content, .footer-content, .main-container, .about-company-row, .gifts-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container, .about-company, .gifts {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-content, .carousel {
+        height: auto;
+    }
+
+    .about-company-row img, .about-company-row .about-text, .gifts-row img {
+        width: 90%;
+    }
+
+    .main-container {
+        border-radius: 30px;
+        flex-direction: column;
+        width: 95%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-company-row .about-text {
+        width: 90%;
+        text-align: justify;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    .header-left, .header-center, .header-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-nav a, .footer-nav a {
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+
+    .header-contact {
+        font-size: 16px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .left-content {
+        border-radius: 20px;
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .left-content h2 {
+        font-size: 24px;
+    }
+
+    .left-content p {
+        font-size: 16px;
+    }
+
+    .left-content button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .left-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 150px;
+        height: 100px;
+        margin: 20px auto;
+    }
+
+    .carousel {
+        border-radius: 20px;
+        margin-right: 0;
+        height: 300px;
+    }
+
+    .about-company {
+        border-radius: 30px;
+        margin: 20px auto;
+    }
+
+    .about-company h2 {
+        font-size: 20px;
+    }
+
+    .about-company-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-company-row img {
+        display: none;
+    }
+
+    .gifts {
+        padding: 20px 10px;
+    }
+
+    .gifts h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .gifts-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px; /* Уменьшаем отступы */
+    }
+
+    .gift-item {
+        width: 80px; /* Фиксированная ширина */
+        max-width: 100px;
+        margin: 2px;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .gift-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .gift-item img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .gift-title {
+        font-size: 10px; /* Уменьшаем текст */
+        text-align: center;
+        margin-top: 3px;
+    }
+
+
+    .footer {
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-nav a {
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+
+    .footer-contact span {
+        margin: 5px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+    }
+
+    .catalog-categories {
+        margin-top: 20px;
+    }
+
+    .header-contact button {
+        margin: 5px;
+    }
+}
+
+
+

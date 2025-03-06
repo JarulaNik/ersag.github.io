@@ -1,0 +1,436 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav a, .footer-nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+    font-family: 'soyuz', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover, .footer-nav a:hover {
+    color: #0056b3;
+}
+
+.header-contact {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'soyuz', sans-serif;
+}
+
+@font-face {
+    font-family: 'soyuz';
+    src: url('../assets/fonts/soyuz.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.main-content {
+    padding: 50px;
+}
+
+.main-container {
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    display: flex;
+    width: 90%;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.left-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.left-content {
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    margin-left: 5px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-content h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.left-content p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.left-content button {
+    background-color: #4aac4a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.left-content button:hover {
+    background-color: #3d8b3d;
+}
+
+.left-logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 262px;
+    height: 150px;
+    background-color: white;
+    border-radius: 1000px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.carousel {
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 5px;
+    height: 740px;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+.about-company {
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    padding: 20px;
+    width: 88%;
+    max-width: 1680px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.about-company h2 {
+    top: 5px;
+    font-family: 'soyuz', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+
+}
+
+.about-company-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-company-row img {
+    border-radius: 30px;
+    background-color: white;
+    margin: 0 10px 10px;
+    height: auto;
+}
+
+
+.about-company-row img:nth-child(1) {
+    width: 200px;
+    padding: 10px;
+}
+
+.about-company-row img:nth-child(2) {
+    width: 250px;
+    padding: 10px;
+}
+
+.about-company-row img:nth-child(3) {
+    width: 300px;
+    padding: 10px;
+}
+
+.about-company-row .about-text {
+    width: 550px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 10px 10px;
+}
+
+.gifts {
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    padding-top: 100px; /* Увеличиваем верхний отступ */
+    width: 90%;
+    max-width: 1260px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    height: 270px;
+}
+
+
+.gifts h2 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 5px; /* Устанавливаем положение над плитками */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    width: 100%; /* Занимаем всю ширину контейнера */
+    text-align: center; /* Центрируем текст */
+    font-family: 'soyuz', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    margin: 0; /* Убираем отступы */
+}
+
+.gifts-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gift-item {
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px;
+    transition: width 0.5s ease-in-out;
+    position: absolute;
+    display: flex; /* Добавляем flex для центрирования названия */
+    flex-direction: column; /* Выстраиваем элементы в колонку */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+}
+
+.gift-title {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 1px; /* Позиционируем снизу */
+    width: 100%; /* Занимаем всю ширину плитки */
+    text-align: center; /* Центрируем текст */
+    font-size: 14px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+}
+
+.gift-item img {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота */
+}
+
+.gifts-row img {
+    width: 200px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px;
+}
+
+.gift-1 { left: 5%; }
+.gift-2 { left: 23%; }
+.gift-3 { left: 41%; }
+.gift-4 { left: 59%; }
+.gift-5 { left: 77%; }
+
+.footer {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-nav a {
+    font-family: 'soyuz', sans-serif;
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.footer-contact span {
+    font-family: 'soyuz', sans-serif;
+    margin-left: 50px; /* Добавляем отступ слева */
+}
+
+.footer-contact span:first-child {
+    font-family: 'soyuz', sans-serif;
+    margin-left: 0; /* Убираем отступ у первого элемента */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Цвет дорожки, по которой двигается бегунок прокрутки */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Цвет бегунка */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+/* Цвет бегунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background: #007bff;
+}
+
+@media (max-width: 800px) {
+    .header-content, .footer-content, .main-container, .about-company-row, .gifts-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container, .about-company, .gifts {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-content, .carousel {
+        height: auto;
+    }
+
+    .about-company-row img, .about-company-row .about-text, .gifts-row img {
+        width: 90%;
+    }
+}
+
+.catalog-categories {
+    margin-top: -40px;
+}
+
+
+.left-content button {
+    background-color: #007bff; /* Используем основной цвет сайта */
+    border: none;
+    padding: 12px 25px; /* Увеличиваем padding для лучшего внешнего вида */
+    border-radius: 30px; /* Делаем более закругленные углы */
+    cursor: pointer;
+    font-weight: bold;
+    color: white; /* Делаем текст белым для контраста */
+    font-size: 16px; /* Увеличиваем размер шрифта */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Добавляем плавные переходы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем небольшую тень */
+    font-family: 'soyuz', sans-serif; /* Используем шрифт soyuz */
+}
+
+.left-content button:hover {
+    background-color: #0056b3; /* Изменяем цвет при наведении */
+    transform: translateY(-2px); /* Небольшое приподнимание при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Увеличиваем тень при наведении */
+}
+
+.left-content button:active {
+    transform: translateY(1px); /* Небольшое опускание при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Уменьшаем тень при нажатии */
+}
+
+/* Стили для кнопок RU и UA в header-contact */
+.header-contact button {
+    background-color: transparent; /* Прозрачный фон */
+    border: 2px solid #007bff; /* Граница в основном цвете сайта */
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #007bff;
+    font-size: 14px;
+    margin: 0 1px; /* Добавляем небольшой отступ между кнопками */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'soyuz', sans-serif;
+}
+
+.header-contact button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.header-contact button:active {
+    background-color: #0056b3;
+}

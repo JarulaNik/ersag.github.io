@@ -1,0 +1,76 @@
+.marketing-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'soyuz', sans-serif;
+}
+
+.marketing-container h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-family: 'soyuz', sans-serif;
+}
+
+.marketing-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+
+.marketing-section h2 {
+
+    margin-bottom: 20px;
+    font-family: 'bound', sans-serif;
+}
+
+.marketing-section h3 {
+
+    margin-bottom: 15px;
+    font-family: 'bound', sans-serif;
+}
+
+.marketing-section p, .marketing-section ul {
+    line-height: 1.7;
+    font-family: 'bound', sans-serif;
+}
+
+.marketing-section ul {
+    padding-left: 20px;
+}
+
+.marketing-section li {
+    margin-bottom: 5px;
+}
+
+.marketing-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.marketing-stat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.marketing-stat h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.marketing-image-section {
+    text-align: center;
+}
+
+.marketing-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

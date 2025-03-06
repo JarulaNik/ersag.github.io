@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог Ersag</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body>
+<div class="body-container">
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="../assets/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header-center">
+                <nav class="header-nav">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog-page.html">Каталог</a>
+                    <a href="payment-delivery.html">Оплата и доставка</a>
+                    <a href="marketing.html">Маркетинг</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="header-contact">
+                    <button id="ru-button">RU</button>
+                    <button id="ua-button">UA</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="catalog-categories">
+            <a href="catalog.html?category=cleaning" class="category" data-category="cleaning">
+                <h2>Чистящие средства</h2>
+                <ul class="dropdown">
+                    <li><a href="#">Для стирки</a></li>
+                    <li><a href="#">Для кухни</a></li>
+                    <li><a href="#">Очистители поверхностей</a></li>
+                    <li><a href="#">Личная гигиена</a></li>
+                    <li><a href="#">Освежители воздуха</a></li>
+                </ul>
+            </a>
+
+            <a href="catalog.html?category=kosmetika" class="category" data-category="kosmetika">
+                <h2>Косметика</h2>
+                <ul class="dropdown">
+                    <li><a href="#">Косметика</a></li>
+                    <li><a href="#">Гели для волос</a></li>
+                    <li><a href="#">Духи и дезодоранты</a></li>
+                    <li><a href="#">Лосьоны</a></li>
+                    <li><a href="#">Средства для ухода</a></li>
+                </ul>
+            </a>
+
+            <a href="catalog.html?category=bad" class="category" data-category="bad">
+                <h2>Пищевые добавки</h2>
+                <ul class="dropdown">
+                    <li><a href="#">Витамины</a></li>
+                    <li><a href="#">Напитков</a></li>
+                    <li><a href="#">Продукты пчеловодства</a></li>
+                    <li><a href="#">Растительные и эфирные масла</a></li>
+                    <li><a href="#">БАДы</a></li>
+                    <li><a href="#">Минералы</a></li>
+                </ul>
+            </a>
+
+            <a href="catalog.html?category=textil" class="category" data-category="textil">
+                <h2>Текстильная группа</h2>
+                <ul class="dropdown">
+                    <li><a href="#">Детское одеяло</a></li>
+                    <li><a href="#">Постельное бельё</a></li>
+                    <li><a href="#">Халаты</a></li>
+                </ul>
+            </a>
+        </div>
+        <div class="product-container"></div>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="../assets/images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="catalog-page.html">Каталог</a>
+            <a href="payment-delivery.html">Оплата и доставка</a>
+            <a href="marketing.html">Маркетинг</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="footer-contact">
+            <span>7 915 180 06 79</span>
+            <span>RU | UA</span>
+        </div>
+    </div>
+</footer>
+<script src="../js/catalog.js"></script>
+</body>
+</html>

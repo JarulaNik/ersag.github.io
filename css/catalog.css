@@ -1,0 +1,281 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.body-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.catalog-categories {
+    font-family: 'soyuz', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.category {
+    position: relative;
+    margin: 10px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    min-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+.category a {
+    color: #007bff; /* Синий цвет как в хедере */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: block; /* Добавляем display: block; */
+    width: 100%; /* Занимаем всю ширину плитки */
+    height: 100%; /* Занимаем всю высоту плитки */
+    user-select: none;
+    outline: none;
+}
+
+.category a:visited {
+    color: inherit !important; /* Или другой синий цвет, который вы используете */
+}
+
+.category h2 {
+    margin: 0;
+    font-size: 1.0em;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.dropdown li {
+    padding: 8px 0;
+}
+
+/* Добавляем стили для ссылок в .dropdown */
+.dropdown a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .category {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .category {
+        width: 100%;
+    }
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product-code {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.product-link {
+    font-family: 'soyuz', sans-serif;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: auto;
+}
+
+.product-link:hover {
+    background-color: rgba(0, 86, 179, 0.44);
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.category-section h2 {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: flex-start;
+    position: relative;
+}
+
+.product-row .product-card {
+    margin-right: 10px;
+    position: relative;
+}
+
+.product-row .product-card:last-child {
+    position: relative;
+}
+
+.product-row .product-card:last-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+}
+
+.product-row .product-card:last-child .view-all {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all button {
+    font-family: 'soyuz', sans-serif;
+    padding: 8px 15px;
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.view-all button:hover {
+    text-decoration: none;
+}
+
+.filter-buttons {
+    margin-top: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    font-family: 'soyuz', sans-serif;
+    padding: 8px 15px;
+    margin: 5px 0; /* Добавлены отступы сверху и снизу каждой кнопки */
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 200px; /* Фиксированная ширина кнопок для единообразия */
+}
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-button.active {
+    background-color: #007bff;
+    color: white;
+}

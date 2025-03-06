@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const categoryName = section.dataset.category;
         const productRow = section.querySelector('.product-row');
 
-        fetch(`../products/${categoryName}/${categoryName === 'cleaning' ? 'chistyashie_sredstva' : categoryName}.json`)
+        fetch(`${categoryName === 'cleaning' ? 'chistyashie_sredstva' : categoryName}.json`)
             .then(response => response.json())
             .then(data => {
                 data.slice(0, 4).forEach((product, index, array) => {

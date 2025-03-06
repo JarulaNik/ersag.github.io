@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isLoading) return;
         isLoading = true;
 
-        fetch(`../products/${category}/${category === 'cleaning' ? 'chistyashie_sredstva' : category}.json`)
+        fetch(`${category === 'cleaning' ? 'chistyashie_sredstva' : category}.json`)
             .then(response => response.json())
             .then(data => {
                 const startIndex = (currentPage - 1) * productsPerPage;

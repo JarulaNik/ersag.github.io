@@ -51,7 +51,7 @@ body {
 
 @font-face {
     font-family: 'soyuz';
-    src: url('../assets/fonts/soyuz.otf') format('opentype');
+    src: url('assets/fonts/soyuz.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }

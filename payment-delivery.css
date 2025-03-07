@@ -87,3 +87,69 @@
 .delivery-methods h2 {
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    .payment-delivery-container {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .payment-delivery-container h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .delivery-methods-container{
+        margin-bottom: 5px;
+    }
+    .payment-methods,
+    .delivery-methods,
+    .delivery-tracking {
+        margin-bottom: 40px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+    .payment-methods h2,
+    .delivery-methods h2,
+    .delivery-tracking h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .payment-icons {
+        flex-direction: row; /* Располагаем иконки горизонтально */
+        justify-content: center; /* Центрируем иконки по горизонтали */
+        flex-wrap: wrap; /* Разрешаем перенос иконок на новую строку */
+    }
+
+    .payment-icons img {
+        width: 50px;
+        margin: 5px; /* Добавляем отступы между иконками */
+    }
+
+    .delivery-content {
+        flex-direction: column;
+        border-radius: 10px;/* Располагаем контент вертикально */
+    }
+
+    .delivery-text {
+        padding-right: 0; /* Убираем правый отступ */
+        margin-bottom: 10px; /* Добавляем нижний отступ */
+        border-radius: 10px;
+    }
+
+    .delivery-image {
+        margin-bottom: 5px;
+        border-radius: 20px;/* Добавляем нижний отступ */
+    }
+    .delivery-tracking {
+        margin-bottom: 1px; /* Уменьшаем нижний отступ */
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+    .delivery-image img {
+        border-radius: 20px;
+    }
+}

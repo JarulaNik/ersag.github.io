@@ -88,3 +88,52 @@ body {
     width: 100%;
     padding: 20px 0;
 }
+
+@media (max-width: 768px) {
+    .contacts-container {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+
+    .contacts-container h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .contacts-content {
+        flex-direction: column; /* Располагаем блоки контактов вертикально */
+        align-items: center; /* Центрируем блоки контактов по горизонтали */
+    }
+
+    .contact-block {
+        width: 90%; /* Занимаем почти всю ширину экрана */
+        margin: 10px 0; /* Уменьшаем отступы */
+    }
+
+    .contact-item {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .contact-item h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .map-container {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        height: 400px; /* Фиксированная высота */
+        overflow: hidden;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 1046px;
+        height: 100%; /* Заполняем контейнер */
+        border: none;
+    }
+}

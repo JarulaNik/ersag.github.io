@@ -5,6 +5,13 @@ body {
     background-color: #f4f4f4;
 }
 
+@font-face {
+    font-family: 'soyuz';
+    src: url('assets/fonts/soyuz.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .header {
     background-color: white;
     border-radius: 0 0 20px 20px;
@@ -47,13 +54,6 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: 'soyuz', sans-serif;
-}
-
-@font-face {
-    font-family: 'soyuz';
-    src: url('assets/fonts/soyuz.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
 }
 
 .main-content {
@@ -351,7 +351,6 @@ height: auto; / Автоматическая высота */
     border-radius: 6px;
 }
 
-/* Цвет бегунка при наведении */
 ::-webkit-scrollbar-thumb:hover {
     background: #007bff;
 }
@@ -361,7 +360,6 @@ height: auto; / Автоматическая высота */
 }
 
 .left-content button {
-    /* Ваши стили для кнопки в .left-content на десктопе */
     background-color: #007bff;
     border: none;
     padding: 12px 25px;

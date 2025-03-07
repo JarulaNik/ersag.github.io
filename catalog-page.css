@@ -244,19 +244,21 @@
     }
 
     .product-row {
-        display: flex;
-        flex-wrap: wrap; /* Разрешаем перенос элементов */
-        justify-content: center; /* Центрируем элементы */
+        flex-wrap: wrap;
+        overflow-x: visible;
+        justify-content: center;
+        padding: 0 10px; /* Добавляем внутренний отступ */
+        box-sizing: border-box;
     }
 
     .product-card {
-        width: 90%; /* Занимаем почти всю ширину на мобильных */
-        margin: 10px auto; /* Центрируем и добавляем отступы */
+        width: 95%; /* Увеличиваем ширину до 95% */
+        margin: 10px auto;
         padding: 15px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        box-sizing: border-box;
+        box-sizing: border-box; /* Учитываем отступы и границы */
     }
 
     .filter-buttons {
@@ -348,7 +350,7 @@ body, .catalog-page, .catalog-categories, .product-container, .category, .produc
     }
 
     .filter-buttons {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .filter-button {

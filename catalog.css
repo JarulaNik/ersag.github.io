@@ -330,6 +330,7 @@ body {
     .product-card {
         width: 90%; /* Почти на всю ширину экрана */
         margin: 10px 0;
+        box-sizing: border-box;
     }
 
     .product-title {

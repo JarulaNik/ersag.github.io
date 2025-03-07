@@ -275,18 +275,18 @@ body {
 }
 
 .gift-title {
-    position: absolute; /* Абсолютное позиционирование */
-    bottom: 1px; /* Позиционируем снизу */
-    width: 100%; /* Занимаем всю ширину плитки */
-    text-align: center; /* Центрируем текст */
-    font-size: 14px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
-    color: #333; /* Цвет текста */
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
 }
 
 .gift-item img {
-    max-width: 100%; /* Максимальная ширина изображения */
-    height: auto; /* Автоматическая высота */
+    max-width: 100%; /* Максимальная ширина изображения /
+height: auto; / Автоматическая высота */
 }
 
 .gifts-row img {
@@ -356,49 +356,47 @@ body {
     background: #007bff;
 }
 
-
-
 .catalog-categories {
     margin-top: -40px;
 }
 
-
 .left-content button {
-    background-color: #007bff; /* Используем основной цвет сайта */
+    /* Ваши стили для кнопки в .left-content на десктопе */
+    background-color: #007bff;
     border: none;
-    padding: 12px 25px; /* Увеличиваем padding для лучшего внешнего вида */
-    border-radius: 30px; /* Делаем более закругленные углы */
+    padding: 12px 25px;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
-    color: white; /* Делаем текст белым для контраста */
-    font-size: 16px; /* Увеличиваем размер шрифта */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Добавляем плавные переходы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем небольшую тень */
-    font-family: 'soyuz', sans-serif; /* Используем шрифт soyuz */
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'soyuz', sans-serif;
 }
 
 .left-content button:hover {
-    background-color: #0056b3; /* Изменяем цвет при наведении */
-    transform: translateY(-2px); /* Небольшое приподнимание при наведении */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Увеличиваем тень при наведении */
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .left-content button:active {
-    transform: translateY(1px); /* Небольшое опускание при нажатии */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Уменьшаем тень при нажатии */
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для кнопок RU и UA в header-contact */
+
 .header-contact button {
-    background-color: transparent; /* Прозрачный фон */
-    border: 2px solid #007bff; /* Граница в основном цвете сайта */
+    background-color: transparent; / Прозрачный фон /
+    border: 2px solid #007bff; / Граница в основном цвете сайта /
     padding: 8px 15px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     color: #007bff;
     font-size: 14px;
-    margin: 0 1px; /* Добавляем небольшой отступ между кнопками */
+    margin: 0 1px; / Добавляем небольшой отступ между кнопками */
     transition: background-color 0.3s ease, color 0.3s ease;
     font-family: 'soyuz', sans-serif;
 }
@@ -412,6 +410,51 @@ body {
     background-color: #0056b3;
 }
 
+.desktop-catalog-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.desktop-catalog-button button {
+    background-color: #007bff; /* Голубой фон */
+    color: white; /* Белые буквы */
+    border: 2px solid #007bff; /* Голубая граница */
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.desktop-catalog-button button:hover {
+    background-color: white; /* Белый фон при наведении */
+    color: #007bff; /* Голубые буквы при наведении */
+}
+
+.mobile-catalog-button {
+    font-family: 'soyuz', sans-serif;
+    display: none;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.mobile-catalog-button button {
+    font-family: 'soyuz', sans-serif;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
 @media (max-width: 800px) {
     .header-content, .footer-content, .main-container, .about-company-row, .gifts-row {
         flex-direction: column;
@@ -419,16 +462,26 @@ body {
     }
 
     .main-container, .about-company, .gifts {
+        margin-top: 0;
         width: 95%;
-        padding: 20px;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
     .left-section, .right-section {
         width: 100%;
-        padding: 10px;
+        padding: 0;
+    }
+
+    .left-section {
+        margin-top: 3px;
+        margin-right: 5px;
     }
 
     .left-content, .carousel {
+        margin-top: 0;
+        border-radius: 30px;
         height: auto;
     }
 
@@ -437,18 +490,20 @@ body {
     }
 
     .main-container {
-        border-radius: 30px;
+        border-radius: 40px;
         flex-direction: column;
         width: 95%;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 10px auto; /* Верхний отступ 10px */
+        padding: 10px; /* Добавляем паддинг для внутреннего отступа */
+        box-sizing: border-box;
     }
 
     .about-company-row .about-text {
         width: 90%;
         text-align: justify;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 25px;
         padding: 20px;
         margin: 10px 0;
     }
@@ -473,105 +528,153 @@ body {
         font-size: 14px;
     }
 
-    .header-contact {
-        font-size: 16px;
-    }
-
     .main-content {
-        padding: 20px;
-    }
-
-    .left-content {
-        border-radius: 20px;
-        padding: 20px;
-        margin-left: 0;
-    }
-
-    .left-content h2 {
-        font-size: 24px;
-    }
-
-    .left-content p {
-        font-size: 16px;
-    }
-
-    .left-content button {
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-size: 14px;
+        padding: 10px;
     }
 
     .left-logo {
+        order: 1;
         position: relative;
         top: 0;
         left: 0;
         transform: none;
         width: 150px;
         height: 100px;
-        margin: 20px auto;
+        margin: 10px auto;
+    }
+    .left-content {
+        padding: 15px; /* Добавляем паддинг к .left-content */
+    }
+    .left-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
 
+    .left-content h2 {
+        order: 2;
+        font-size: 24px;
+    }
+
+    .left-content p {
+        order: 3;
+        font-size: 16px;
+    }
+
+    .left-content button {
+        margin-top: auto;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 14px;
+        align-self: center;
+    }
+    .left-content h2,
+    .left-content p {
+        flex-grow: 1;
+    }
+
+
     .carousel {
-        border-radius: 20px;
-        margin-right: 0;
+        border-radius: 30px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        margin-left: 3px;
         height: 300px;
     }
 
     .about-company {
-        border-radius: 30px;
+        border-radius: 35px;
         margin: 20px auto;
+        padding-bottom: 1px;
+        padding-right: 12px;
+        padding-left: 12px;
     }
 
     .about-company h2 {
+        border-radius: 30px;
         font-size: 20px;
     }
-
     .about-company-row {
         flex-direction: column;
-        gap: 10px;
+        gap: 50px;
     }
 
     .about-company-row img {
         display: none;
     }
 
-    .gifts {
-        padding: 20px 10px;
-    }
+
 
     .gifts h2 {
         font-size: 20px;
         margin-bottom: 15px;
         text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .gifts {
+        padding-top: 20px;
+        height: auto;
     }
 
     .gifts-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px; /* Уменьшаем отступы */
+        gap: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     .gift-item {
-        width: 80px; /* Фиксированная ширина */
-        max-width: 100px;
-        margin: 2px;
-        transition: 0.3s ease-in-out;
+        width: calc(50% - 10px);
+        margin: 5px;
+        position: relative;
+        left: auto;
     }
 
+    .gift-item img {
+        max-width: 100%;
+        height: auto;
+    }
 
     .gift-item:hover {
         transform: translateY(-5px);
     }
 
-    .gift-item img {
+    .mobile-catalog-button {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .mobile-catalog-button button {
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .desktop-catalog-button {
+        display: none;
+    }
+
+    .mobile-catalog-button {
+        display: block;
     }
 
     .gift-title {
-        font-size: 10px; /* Уменьшаем текст */
+        font-size: 10px;
         text-align: center;
         margin-top: 3px;
     }
@@ -611,6 +714,3 @@ body {
         margin: 5px;
     }
 }
-
-
-
